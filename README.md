@@ -12,7 +12,7 @@ Dataset: https://www.kaggle.com/datasets/oktayrdeki/ddos-traffic-dataset/code
 - Deployed on Render.
 
 ## 🛠️ Setup Instructions
-#### **Go on Render*
+#### **Go on Render**
 https://ddosattackpredictor.onrender.com
 PS: might be down ☹️
 #### **Run Locally**
