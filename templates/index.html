@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDoS Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>DDoS Attack Detection</h1>
+        <form id="ddos-form">
+            <label>Source Port:</label>
+            <input type="number" id="source_port" required>
+
+            <label>Destination Port:</label>
+            <input type="number" id="dest_port" required>
+
+            <label>Packet Length:</label>
+            <input type="number" step="0.1" id="packet_length" required>
+
+            <label>Packets/Time:</label>
+            <input type="number" step="0.1" id="packets_time" required>
+
+            <label>Highest Layer:</label>
+            <select id="highest_layer">
+                <option value="HTTP">HTTP</option>
+                <option value="FTP">FTP</option>
+                <option value="DNS">DNS</option>
+                <option value="ARP">ARP</option>
+                <option value="BOOTP">BOOTP</option>
+                <option value="BROWSER">BROWSER</option>
+                <option value="DATA">DATA</option>
+                <option value="DHCPV6">DHCPV6</option>
+                <option value="LLMNR">LLMNR</option>
+                <option value="NBNS">NBNS</option>
+                <option value="QUIC">QUIC</option>
+                <option value="SSDP">SSDP</option>
+                <option value="TCP">TCP</option>
+            </select>
+
+            <label>Transport Layer:</label>
+            <select id="transport_layer">
+                <option value="TCP">TCP</option>
+                <option value="UDP">UDP</option>
+            </select>
+
+            <button type="submit">Check for DDoS Attack</button>
+        </form>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
