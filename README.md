@@ -18,8 +18,8 @@ PS: might be down ☹️
 #### **Run Locally**
 ```sh
 # Clone the repository
-git clone https://github.com/your-username/DDoSAttackPredictor.git
-cd DDoSAttackPredictor/backend
+git clone https://github.com/nishalahmedpk/DDoSAttackPredictor
+cd DDoSAttackPredictor
 
 # Create a virtual environment
 python -m venv venv
