@@ -1,6 +1,8 @@
 # DDoSAttackPredictor
 This is a machine learning-powered web application that detects potential DDoS attacks based on network traffic data. The frontend is built with HTML, CSS, and JavaScript, while the backend is powered by Flask and TensorFlow.
 
+Dataset: https://www.kaggle.com/datasets/oktayrdeki/ddos-traffic-dataset/code
+
 ## 🚀 Features
 
 - Upload network traffic details and predict whether it's a DDoS attack.
